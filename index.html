@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=WindSong&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script defer src="https://kit.fontawesome.com/a04e0adadc.js" crossorigin="anonymous"></script>
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="script.js"></script>
+    <title>Kyle Kalpakoff</title>
+</head>
+<body>
+    <div class="topnav">
+        <div class="topnav_left">
+            <a href="/index.html" class="home-nav">Home</a>
+            <a href="/about.html" class="about-nav">About</a>
+        </div>
+        <img src="treelogo.jpg" class="treelogo">
+        <div class="topnav_right">
+            <a href="/portfolio.html" class="portfolio-nav">Portfolio</a>
+            <a href="/contact.html" class="contact-nav">Contact Me</a>
+        </div>
+    </div>      
+    <div class="mobile-nav">
+        <button class="nav-button" id="btnNav" type="button">
+            <i class="material-icons">menu</i>
+        </button>
+    </div>
+    <div class="sidebar">
+        <div class="sidebar-links">
+            <a href="/index.html" class="sidebar-link">Home</a>
+            <a href="/about.html" class="sidebar-link">About</a>
+            <a href="/portfolio.html" class="sidebar-link">Portfolio</a>
+            <a href="/contact.html" class="sidebar-link">Contact</a>
+        </div>
+        <div class="sidebar-overlay"></div>
+    </div>
+    <main id="swup" class="transition-fade">
+        <div class="video-container">
+            <div class="video-container-layer">
+                <video class="logomov" autoplay loop muted>
+                    <source src="logomov.mov" type="video/mp4" class="logomov">
+                </video>
+            </div>
+                <span class="title">-HTML Email Developer</span>
+                <span class="name">Kyle Kalpakoff</span>
+        </div> 
+        <div class="mission-block">
+            <div class="mission-left">
+                <div class="mission-wrapper">
+                    <h5 class="skills">Skills</h5>
+                    <div class="skills-top">
+                        <i class="fab fa-html5" id="html"></i>
+                        <i class="fab fa-css3-alt" id="css"></i>
+                        <i class="fab fa-js" id="java"></i>
+                    </div>
+                    <br>
+                    <div class="skills-bottom">
+                        <img src="vscodeicon.png" id="vscode">
+                        <i class="fab fa-sass" id="sass"></i>
+                        <img src="psicon.png" id="psicon">
+                    </div>
+                </div>
+            </div>
+            <div class="mission-right">
+                <div class="mission-wrapper">
+                    <div class="mission-content">
+                        <h4 class="mission-title">Main Mission</h4>
+                        <p class="mission-text">I am an aspiring HTML Email Developer looking to put his skills to the test. I am highly motivated with great problem-solving skills and high attention to detail. I am willing to learn any and all things required to get the job done and am always looking forward to gaining new knowledge to improve my skillset.
+                        </p>
+                        <form><button class="read-more" formaction="about.html">Read More</button></form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="workflow">
+            <div class="row">
+                <div class="workflow-top">
+                    <span class="workflow-title">Smooth Interface Interaction</span>
+                    <p class="workflow-description">Creation of friendly web interface layout</p>
+                </div>
+            </div>
+            <div class="left-content">
+                <div class="timeline-left">
+                    <div class="workflow-one">
+                        <small class="one">01</small>
+                        <span class="line"></span>
+                    </div>
+                    <div class="workflow-one-content">
+                        <p class="process">Work flow process</p>
+                        <ul class="list">
+                            <li>Research</li>
+                            <li>Concept Development</li>
+                            <li>Content Strategy</li>
+                            <li>User Testing</li>
+                            <li>Deploy</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-middle">
+                    <div class="workflow-one">
+                        <small class="one">02</small>
+                        <span class="line"></span>
+                    </div>
+                    <div class="workflow-one-content">
+                        <p class="process">Skills</p>
+                        <ul class="list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>SASS</li>
+                            <li>Javascript</li>
+                            <li>Foundation Email Framework</li>
+                            <li>Photoshop</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-right">
+                    <div class="workflow-one">
+                        <small class="one">03</small>
+                        <span class="line"></span>
+                    </div>
+                    <div class="workflow-one-content">
+                        <p class="process">Tools</p>
+                        <ul class="list">
+                            <li>Visual Studio Code</li>
+                            <li>Linux Ubuntu</li>
+                            <li>Litmus</li>
+                            <li>Mailchimp</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        <div class="footer">
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/portfolio.html">Portfolio</a>
+            <a href="/contact.html">Contact</a>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const nav = document.querySelector(".sidebar");
+
+            document.querySelector("#btnNav").addEventListener("click", () => {
+                nav.classList.add("sidebar--open");
+            });
+
+            document.querySelector(".sidebar-overlay").addEventListener("click", () => {
+                nav.classList.remove("sidebar--open");
+            });
+        });
+    </script>
+    </main>
+</body>
+
+
+</html>

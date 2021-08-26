@@ -1,0 +1,218 @@
+.about-header {
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-top: 100px; */
+    /* background-repeat: repeat; */
+    background-size: 100%;
+    width: 90%;
+    height: 500px;
+    background-image: url("headerbg1.jpg");
+    /* opacity: .10; */
+}
+
+.text-wrapper{
+    display: flex;
+    justify-content: center;
+    padding-top: 210px;
+}
+
+.about-text{
+    padding: 0;
+    margin: 0;
+    font-size: 90px;
+    color: rgb(243, 240, 240);
+    font-family: 'WindSong', cursive;
+    transition: all .5s ease-in-out;
+    cursor: default;
+}
+
+.description-wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.description-wrapper-middle{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.left-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    float: left;
+    width: 45%;
+    height: 500px;
+    font-size: 60px;
+    color: rgb(172, 161, 161);
+    font-family: 'Raleway', cursive;
+    font-weight: 100;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+    cursor: default;
+}
+
+.about-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+.about-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    float: right;
+    width: 55%;
+    height: 500px;
+    background:#EAE9E5;
+    color: #78716E;
+    line-height: 30px;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+.left-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px !important;
+    float: left;
+    width: 55%;
+    height: 500px;
+    background:#EAE9E5;
+    color: #78716E;
+    line-height: 30px;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+.description-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    float: right;
+    width: 45%;
+    height: 500px;
+    font-size: 60px;
+    color: rgb(172, 161, 161);
+    font-family: 'Raleway', cursive;
+    font-weight: 100;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+    cursor: default;
+}
+
+.about-section-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    float: right;
+    width: 55%;
+    height: 500px;
+    background:#EAE9E5;
+    color: #78716E;
+    line-height: 30px;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+.page-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 46px;
+    background-color: #78716E;
+    text-align: center;    
+}
+
+.page-footer a{
+    font-size: 13px;
+    text-decoration: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #EAE9E5;
+    transition: color .3s ease;
+}
+
+.page-footer a:hover{
+    color: black;
+    transition: color .3s ease;
+}
+
+@media screen and (max-width: 1040px){
+    .about-header{
+        height: 400px;
+        background-size: 1100px;
+    }
+    
+    .about-text{
+        font-size: 50px;
+    }
+
+    .description-left{
+        display: table;
+        font-size: 40px;
+        width: 100%;
+        height: auto;
+    }
+
+    .left-wrapper{
+        text-align: center;
+        width: 100%;
+    }
+
+    .about-section{
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .left-section{
+        text-align: center;
+        width: 100%;
+        height: auto;   
+        float: right; 
+    }
+
+    .description-right{
+        font-size: 40px;
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+
+    .description-wrapper-middle{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about-section-bottom{
+        text-align: center;
+        width: 100%;
+        height: auto;   
+        float: right; 
+    }
+
+    .page-footer a{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

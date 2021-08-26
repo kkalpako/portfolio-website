@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=WindSong&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a04e0adadc.js" crossorigin="anonymous"></script>
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="script.js"></script>
+    <title>Portfolio</title>
+</head>
+    <body>
+        <div class="topnav">
+            <div class="topnav_left">
+                <a href="/index.html" class="home-nav">Home</a>
+                <a href="/about.html" class="about-nav">About</a>
+            </div>
+            <img src="treelogo.jpg" class="treelogo">
+            <div class="topnav_right">
+                <a href="/portfolio.html" class="portfolio-nav">Portfolio</a>
+                <a href="/contact.html" class="contact-nav">Contact Me</a>
+            </div>
+        </div>
+        <div class="mobile-nav">
+            <button class="nav-button" id="btnNav" type="button">
+                <i class="material-icons">menu</i>
+            </button>
+        </div>
+        <div class="sidebar">
+            <div class="sidebar-links">
+                <a href="/index.html" class="sidebar-link">Home</a>
+                <a href="/about.html" class="sidebar-link">About</a>
+                <a href="/portfolio.html" class="sidebar-link">Portfolio</a>
+                <a href="/contact.html" class="sidebar-link">Contact</a>
+            </div>
+            <div class="sidebar-overlay"></div>
+        </div>
+    <main id="swup" class="transition-fade">
+        <div class="portfolio-header">
+            <div class="text-wrapper">
+                <h1 class="about-text">Portfolio</h1>
+            </div>
+            <div>
+                <p class="recent">Recent Projects</p>
+            </div>
+        </div>
+        <div>
+            <div class="samples-container">
+                <div class="sample">
+                        <img src="coteriess.png" class="coteriess">    
+                    <div class="sample-text">
+                        <span class="sample-padding">Promotional Email for Coterie Brooklyn</span>
+                    </div>
+                    <div class="sample-btn">
+                        <input type="submit" value="Take A Look" class="look-button">
+                    </div>
+                </div>
+                <div class="sample">
+                        <img src="mcgeess.png" class="coteriess">    
+                    <div class="sample-text">
+                        <span class="sample-padding">Newsletter Email for McGee & Co.</span>
+                    </div>
+                    <div class="sample-btn">
+                        <input type="submit" value="Take A Look" class="look-button">
+                    </div>
+                </div>
+                <div class="sample">
+                        <img src="candbss.png" class="coteriess">    
+                    <div class="sample-text">
+                        <span class="sample-padding">Transactional Email for Crate & Barrel</span>
+                    </div>
+                    <div class="sample-btn">
+                        <input type="submit" value="Take A Look" class="look-button">
+                    </div>
+                </div>
+                <div class="sample">
+                        <img src="foodiess.png" class="coteriess">    
+                    <div class="sample-text">
+                        <span class="sample-padding">Email Landing Page for Foodie</span>
+                    </div>
+                    <div class="sample-btn">
+                        <input type="submit" value="Take A Look" class="look-button">
+                    </div>
+                </div>
+            </div>
+
+        <div class="page-footer">
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/portfolio.html">Portfolio</a>
+            <a href="/contact.html">Contact</a>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+        <script>
+            $(document).ready(function(){
+               $(window).scroll(function(){
+                   $('.portfolio-header').css("opacity", 1- $(window).scrollTop() / 700)
+               })
+           })
+       </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const nav = document.querySelector(".sidebar");
+    
+                document.querySelector("#btnNav").addEventListener("click", () => {
+                    nav.classList.add("sidebar--open");
+                });
+    
+                document.querySelector(".sidebar-overlay").addEventListener("click", () => {
+                    nav.classList.remove("sidebar--open");
+                });
+            });
+        </script>
+        </div>
+        </main>
+    </body>
+</html>

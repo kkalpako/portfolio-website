@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=WindSong&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a04e0adadc.js" crossorigin="anonymous"></script>
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="script.js"></script>
+    <title>About</title>
+</head>
+<body>
+    <div class="topnav">
+        <div class="topnav_left">
+            <a href="/index.html" class="home-nav">Home</a>
+            <a href="/about.html" class="about-nav">About</a>
+        </div>
+        <img src="treelogo.jpg" class="treelogo">
+        <div class="topnav_right">
+            <a href="/portfolio.html" class="portfolio-nav">Portfolio</a>
+            <a href="/contact.html" class="contact-nav">Contact Me</a>
+        </div>
+    </div>
+    <div class="mobile-nav">
+        <button class="nav-button" id="btnNav" type="button">
+            <i class="material-icons">menu</i>
+        </button>
+    </div>
+    <div class="sidebar">
+        <div class="sidebar-links">
+            <a href="/index.html" class="sidebar-link">Home</a>
+            <a href="/about.html" class="sidebar-link">About</a>
+            <a href="/portfolio.html" class="sidebar-link">Portfolio</a>
+            <a href="/contact.html" class="sidebar-link">Contact</a>
+        </div>
+        <div class="sidebar-overlay"></div>
+    </div>
+<main id="swup" class="transition-fade">
+    <div class="about-header">
+        <div class="text-wrapper">
+            <h1 class="about-text">About Me</h1>
+        </div>
+    </div>
+    <div class="description-wrapper">
+        <div class="description-left">
+            <div class="left-wrapper">
+                <p class="description-title">Background</p>
+            </div>
+        </div>
+        <div class="about-section">
+            <div class="about-wrapper">
+                <p class="about-description">
+                    I've recently discovered how much of a passion I have for developing and creating websites and different types of web content. It allows me to take from my creative side and merge that with my knowledge about computers which to me, is the best of both worlds. I have been learning and practicing mostly front-end development at the start of 2021, and have been tackling different varieties of projects to test and improve my skills while developing websites and various types of emails.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="description-wrapper-middle">
+        <div class="left-section">
+            <div class="about-wrapper">
+                <p class="about-description">
+                    Since the beginning of the year I've been taking web developing classes to learn the basics of HTML, CSS, and Javascript. I've created various websites and emails as a result of those classes and have also learned to use other programs such as Photoshop and frameworks such as Foundation for Emails. They've taught me the process of creating, testing, and distributing responsive emails that follow industry standards.
+                </p>
+            </div>
+        </div>
+        <div class="description-right">
+            <div class="left-wrapper">
+                <p class="description-title">Knowledge</p>
+            </div>
+        </div>
+    </div>
+    <div class="description-wrapper">
+        <div class="description-left">
+            <div class="left-wrapper">
+                <p class="description-title">Goals</p>
+            </div>
+        </div>
+        <div class="about-section-bottom">
+            <div class="about-wrapper">
+                <p class="about-description">
+                    My current goal is to get my foot in the industry by attaining an HTML Email Developer job and gain experience, improve my skills, and learn about best practices in the job itself. I want to perfect my craft and enjoy the process of creating and distributing emails for my company and/or clients to their satisfaction.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="page-footer">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/portfolio.html">Portfolio</a>
+        <a href="/contact.html">Contact</a>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+           $(window).scroll(function(){
+               $('.about-header').css("opacity", 1- $(window).scrollTop() / 700)
+           })
+       })
+   </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const nav = document.querySelector(".sidebar");
+
+            document.querySelector("#btnNav").addEventListener("click", () => {
+                nav.classList.add("sidebar--open");
+            });
+
+            document.querySelector(".sidebar-overlay").addEventListener("click", () => {
+                nav.classList.remove("sidebar--open");
+            });
+        });
+    </script>
+    </main>
+</body>
